@@ -5,8 +5,6 @@ const StoryReview = require("../Models/StoryReview");
 
 // POST - Create a new review for a short story
 router.post("/", async (req, res) => {
-    console.log(req.body); // Log the incoming request body for debugging
-
     // Destructure required fields from the request body
     const { author, rating, body, storyId } = req.body;
 

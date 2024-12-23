@@ -121,9 +121,6 @@ router.put('/:id', async (req, res) => {
             return res.status(404).json({ error: 'Comment not found' });
         }
 
-        // Return success message with 200 OK status
-        console.log('Comment deleted:', id);  // Log the ID of the deleted comment (for debugging)
-
         res.status(200).json({ message: 'Comment deleted successfully', commentId: id });
 
     } catch (error) {

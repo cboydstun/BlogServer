@@ -8,9 +8,6 @@ const mongoose = require('mongoose')
 router.post('/signup', async (req, res) => {
     const { email } = req.body;
 
-    console.log(`Received email: ${email}`);
-    console.log(`Email validation result: ${validator.isEmail(email)}`); // Log the validation result
-
     if (!validator.isEmail(email)) {
         return res.status(400).json({ error: 'Invalid email format.' });
     }

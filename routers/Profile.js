@@ -13,8 +13,6 @@ router.use(express.json()); // Ensure the server can parse JSON request bodies
 router.post("/login", async (req, res) => {
     const { name, password } = req.body;
 
-    console.log("Login attempt:", name, password);
-
     if (!name || !password) {
         return res.status(400).json({ message: "Username and password are required" });
     }
@@ -24,15 +22,11 @@ router.post("/login", async (req, res) => {
         const author = await Author.findOne({ name });
 
         if (!author) {
-            console.log("User not found");
             return res.status(400).json({ message: "User not found" });
         }
 
-        console.log("User found:", author);
-
         // Compare the entered password with the stored hashed password
         const isMatch = await bcrypt.compare(password, author.password);
-        console.log("Password match:", isMatch);
 
         if (!isMatch) {
             return res.status(400).json({ message: "Invalid credentials" });
@@ -50,7 +44,6 @@ router.post("/login", async (req, res) => {
 
         res.status(200).json({ message: `authenticated user ${author.name}`, author, token });
     } catch (error) {
-        console.error("Error during login:", error);
         res.status(500).json({ message: "Server error" });
     }
 });
@@ -69,10 +62,8 @@ router.post("/request-reset", async (req, res) => {
 
         // TODO: Figure out what needs to go in the reset link
         const resetLink = `http://localhost:3000/reset-password/${token}`;
-        console.log(`Password reset link: ${resetLink}`);
         res.status(200).json({ message: "Reset link sent", resetLink });
     } catch (error) {
-        console.log(error);
         res.status(500).json({ message: "Error requesting password reset" });
     }
 });
@@ -90,7 +81,6 @@ router.post("/reset-password", async (req, res) => {
         await Author.findByIdAndUpdate(userId, { password: hashedPassword });
         res.status(200).json({ message: "Password has been reset" });
     } catch (error) {
-        console.log(error);
         res.status(500).json({ message: "Error resetting password" });
     }
 });
