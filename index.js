@@ -37,5 +37,5 @@ app.use("/events", eventRoutes);
 app.use("/storyReview", storyReviewRoute);
 
 app.listen(PORT, () => {
-  console.log(`Listening on PORT ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
