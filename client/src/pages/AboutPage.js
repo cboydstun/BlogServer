@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import clientImage from '../assets/MikeN.png';
 
 // Reusable style classes
@@ -11,7 +12,68 @@ const headingClasses =
 
 const AboutPage = () => {
   return (
-    <div className="flex flex-col items-center min-h-screen bg-gradient-to-b from-orange-50 to-orange-100 p-6 transition-all duration-1000">
+    <>
+      <Helmet>
+        <title>About Mike Ninnes - Veteran Writer & Washington Wordsmiths Founder</title>
+        <meta name="description" content="Learn about Mike Ninnes, a retired Air Force veteran, published author, and founder of Washington Wordsmiths. Discover his journey from military service to storytelling." />
+        <meta name="keywords" content="Mike Ninnes biography, Air Force veteran writer, Washington Wordsmiths founder, Maryville University author" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="About Mike Ninnes - Veteran Writer & Washington Wordsmiths Founder" />
+        <meta property="og:description" content="Learn about Mike Ninnes, a retired Air Force veteran, published author, and founder of Washington Wordsmiths. Discover his journey from military service to storytelling." />
+        <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Mike Ninnes - Veteran Writer & Washington Wordsmiths Founder" />
+        <meta name="twitter:description" content="Learn about Mike Ninnes, a retired Air Force veteran, published author, and founder of Washington Wordsmiths. Discover his journey from military service to storytelling." />
+        <meta name="twitter:image" content="%PUBLIC_URL%/og-image.png" />
+
+        <link rel="canonical" href="https://yourdomain.com/about" />
+        
+        {/* JSON-LD structured data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "mainEntity": {
+              "@type": "Person",
+              "name": "Mike Ninnes",
+              "description": "Retired Air Force veteran, author, and founder of Washington Wordsmiths",
+              "jobTitle": "Author",
+              "alumniOf": "Air Force",
+              "affiliation": [{
+                "@type": "Organization",
+                "name": "Washington Wordsmiths",
+                "description": "A writer's group at Washington Public Library",
+                "foundingDate": "2017"
+              }, {
+                "@type": "Organization",
+                "name": "Maryville University"
+              }],
+              "award": "Published in Maryville University's literary book Magnolia",
+              "workExample": [{
+                "@type": "CreativeWork",
+                "name": "Laughter and Tears - A Story about Virginia Berning",
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "Maryville University"
+                }
+              }, {
+                "@type": "CreativeWork",
+                "name": "Family",
+                "publisher": {
+                  "@type": "Book",
+                  "name": "The Bridges Between Us",
+                  "datePublished": "2019-06"
+                }
+              }]
+            }
+          })}
+        </script>
+      </Helmet>
+      <div className="flex flex-col items-center min-h-screen bg-gradient-to-b from-orange-50 to-orange-100 p-6 transition-all duration-1000">
       <section className={sectionClasses}>
         <div className={gradientBorderClasses}></div>
         <h1 className={headingClasses}>
@@ -50,6 +112,7 @@ const AboutPage = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

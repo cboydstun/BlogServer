@@ -1,0 +1,28 @@
+{
+  "short_name": "Mike Ninnes",
+  "name": "Mike Ninnes - Author & Storyteller",
+  "description": "Explore Mike Ninnes's collection of stories, blog posts, and events. A veteran writer sharing tales of God, Country, and Family.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

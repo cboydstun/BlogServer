@@ -4,9 +4,43 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="%PUBLIC_URL%/og-image.png" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/static/media/MikeN.png" as="image" />
+    
+    <!-- PWA Support -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="theme-color" content="#000000" />
-   
-    <title>Title</title>
+    <meta name="description" content="Explore insightful blog posts, stories, and events. Your destination for engaging content and community discussions." />
+    <meta name="keywords" content="blog, stories, events, community, articles, discussions" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Blog Server" />
+    <link rel="canonical" href="https://yourdomain.com" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.com" />
+    <meta property="og:title" content="Blog Server - Your Community Blog Platform" />
+    <meta property="og:description" content="Explore insightful blog posts, stories, and events. Your destination for engaging content and community discussions." />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://yourdomain.com" />
+    <meta name="twitter:title" content="Blog Server - Your Community Blog Platform" />
+    <meta name="twitter:description" content="Explore insightful blog posts, stories, and events. Your destination for engaging content and community discussions." />
+    <meta name="twitter:image" content="%PUBLIC_URL%/og-image.png" />
+    
+    <title>Blog Server - Your Community Blog Platform</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

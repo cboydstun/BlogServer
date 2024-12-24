@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet-async';
 import clientImage from "../assets/MikeN.png";
 import NewsletterForm from "../components/Newsletter";
 import "../pages/Home";
@@ -47,7 +48,56 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center min-h-screen bg-gradient-to-b from-orange-50 to-orange-100 p-6 transition-all duration-1000">
+    <>
+      <Helmet>
+        <title>Mike Ninnes - Author, Storyteller, and Air Force Veteran</title>
+        <meta name="description" content="Explore Mike Ninnes's collection of stories, including 'God, Country, Family'. Discover blog posts from a retired Air Force veteran and accomplished storyteller." />
+        <meta name="keywords" content="Mike Ninnes, author, storyteller, Air Force veteran, God Country Family, short stories, blog" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Mike Ninnes - Author, Storyteller, and Air Force Veteran" />
+        <meta property="og:description" content="Explore Mike Ninnes's collection of stories, including 'God, Country, Family'. Discover blog posts from a retired Air Force veteran and accomplished storyteller." />
+        <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Mike Ninnes - Author, Storyteller, and Air Force Veteran" />
+        <meta name="twitter:description" content="Explore Mike Ninnes's collection of stories, including 'God, Country, Family'. Discover blog posts from a retired Air Force veteran and accomplished storyteller." />
+        <meta name="twitter:image" content="%PUBLIC_URL%/og-image.png" />
+
+        <link rel="canonical" href="https://yourdomain.com" />
+        
+        {/* JSON-LD structured data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://yourdomain.com",
+            "name": "Mike Ninnes - Author & Storyteller",
+            "description": "Explore Mike Ninnes's collection of stories, including 'God, Country, Family'. Discover blog posts from a retired Air Force veteran and accomplished storyteller.",
+            "author": {
+              "@type": "Person",
+              "name": "Mike Ninnes",
+              "description": "Retired Air Force veteran, author, and founder of Washington Wordsmiths",
+              "sameAs": [
+                "https://yourdomain.com/about"
+              ]
+            },
+            "mainEntity": {
+              "@type": "Book",
+              "name": "God, Country, Family: Three Short Stories",
+              "author": {
+                "@type": "Person",
+                "name": "Mike Ninnes"
+              },
+              "url": "https://a.co/d/8bZOQID",
+              "description": "Three Stories pulling you in with questions of belief, War, Tears and Laughter..."
+            }
+          })}
+        </script>
+      </Helmet>
+      <div className="flex flex-col items-center min-h-screen bg-gradient-to-b from-orange-50 to-orange-100 p-6 transition-all duration-1000">
       {/* Book Section */}
       <section className={sectionClasses}>
         <div className={gradientBorderClasses}></div>
@@ -168,6 +218,7 @@ const HomePage = () => {
         <NewsletterForm />
       </section>
     </div>
+    </>
   );
 };
 
