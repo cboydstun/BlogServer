@@ -22,7 +22,7 @@ const BlogForm = ({ onAddBlog }) => {
             };
 
             try {
-                const response = await fetch('http://localhost:8080/blog/blogs', {
+                const response = await fetch('/blog/blogs', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

@@ -4,7 +4,7 @@ const DeleteBlog = ({ blogId, onDelete }) => {
     // handleDelete function, if successful it calls the onDelete callback to inform the parent component to update the state (e.g., refresh the blog list).
     const handleDelete = async () => {
         try {
-            const response = await fetch(`http://localhost:8080/blog/blogs/${blogId}`, {
+            const response = await fetch(`/blog/blogs/${blogId}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',

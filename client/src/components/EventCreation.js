@@ -22,7 +22,7 @@ const EventCreation = () => {
         .find((row) => row.startsWith("token="))
         .split("=")[1];
 
-      const response = await fetch("http://localhost:8080/events/create", {
+      const response = await fetch("/events/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

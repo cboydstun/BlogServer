@@ -10,7 +10,7 @@ const CommentsSection = ({ blogId }) => {
   useEffect(() => {
     const fetchComments = async () => {
       try {
-        const response = await fetch(`http://localhost:8080/comments/blog/${blogId}`);
+        const response = await fetch(`/comments/blog/${blogId}`);
         if (!response.ok) {
           throw new Error('Failed to fetch comments');
         }
@@ -63,7 +63,7 @@ const CommentsSection = ({ blogId }) => {
     };
    
     try {
-      const response = await fetch(`http://localhost:8080/comments`, {
+      const response = await fetch(`/comments`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

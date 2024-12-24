@@ -15,7 +15,7 @@ const BlogList = () => {
 
   const handleFetchBlogs = async () => {
     try {
-      const response = await fetch('http://localhost:8080/blog/blogs', {
+      const response = await fetch('/blog/blogs', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ const BlogList = () => {
   const handleSave = async () => {
     if (editedBlog.title && editedBlog.content) {
       try {
-        const response = await fetch(`http://localhost:8080/blog/blogs/${editingId}`, {
+        const response = await fetch(`/blog/blogs/${editingId}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -70,7 +70,7 @@ const BlogList = () => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:8080/blog/blogs/${id}`, {
+      const response = await fetch(`/blog/blogs/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
@@ -91,7 +91,7 @@ const BlogList = () => {
   const handleAdd = async () => {
     if (newBlog.title && newBlog.content) {
       try {
-        const response = await fetch('http://localhost:8080/blog/blogs', {
+        const response = await fetch('/blog/blogs', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

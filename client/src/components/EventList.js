@@ -12,7 +12,7 @@ const EventList = () => {
     const fetchEvents = async () => {
       try {
         console.log("Fetching events...");
-        const response = await fetch("http://localhost:8080/events");
+        const response = await fetch("/events");
         if (!response.ok) {
           throw new Error("failed to fetch events");
         }
@@ -31,7 +31,7 @@ const EventList = () => {
   const handleEventSignup = async (eventId) => {
     try {
       const response = await fetch(
-        `http://localhost:8080/events/${eventId}/signup`,
+        `/events/${eventId}/signup`,
         {
           method: "POST",
           headers: {

@@ -7,7 +7,7 @@ const StoryPage = () => {
 
   const fetchStories = async () => {
     try {
-      const response = await fetch("http://localhost:8080/stories");
+      const response = await fetch("/stories");
       const data = await response.json();
       console.log("logging stories", data);   
       // Sort stories by createdAt date in descending order

@@ -1,7 +1,7 @@
 
 //this component is strictly for handling the visual UI deletion 
 const StoryDelete = ({ postId, onDelete, onCancel , fetchStories}) => {
-    const uRl = `http://localhost:8080/stories/${postId}`;
+    const uRl = `/stories/${postId}`;
 
     const handleDelete = async () => {
         try {

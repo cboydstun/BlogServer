@@ -9,7 +9,7 @@ const AdminReviews = ({ storyId }) => { // Accept storyId as a prop
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        const response = await fetch(`http://localhost:8080/storyReview`);
+        const response = await fetch(`/storyReview`);
         
         // Check if response is successful
         if (!response.ok) {
@@ -32,7 +32,7 @@ const AdminReviews = ({ storyId }) => { // Accept storyId as a prop
     const confirmDelete = window.confirm('Are you sure you want to delete this review?');
     if (confirmDelete) {
       try {
-        const response = await fetch(`http://localhost:8080/storyReview/${id}`, {
+        const response = await fetch(`/storyReview/${id}`, {
           method: 'DELETE',
         });
 

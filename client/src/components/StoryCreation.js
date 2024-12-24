@@ -22,7 +22,7 @@ const StoryCreation = ({setIsVisible}) => {
         .split(";")
         .find((row) => row.startsWith("token="))
         .split("=")[1];
-        const response = await fetch("http://localhost:8080/stories", {
+        const response = await fetch("/stories", {
         method: "POST",
         headers: {
           "Content-type": "application/json",

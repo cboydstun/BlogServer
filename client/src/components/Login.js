@@ -12,7 +12,7 @@ const Login = () => {
     const payload = { name, password, email };
     // console.log("Request Payload:", payload); // Log the request payload
     try {
-      const response = await fetch("http://localhost:8080/profile/login", {
+      const response = await fetch("/profile/login", {
         method: "POST",
         headers: {
           "Content-type": "application/json",

@@ -10,7 +10,7 @@ const AdminCommentsPage = () => {
   useEffect(() => {
     const fetchComments = async () => {
       try {
-        const response = await fetch(`http://localhost:8080/comments/all`);
+        const response = await fetch(`/comments/all`);
         if (!response.ok) {
           throw new Error('Failed to fetch comments');
         }
@@ -31,7 +31,7 @@ const AdminCommentsPage = () => {
     const confirmDelete = window.confirm('Are you sure you want to delete this comment?');
     if (confirmDelete) {
       try {
-        const response = await fetch(`http://localhost:8080/comments/${id}`, {
+        const response = await fetch(`/comments/${id}`, {
           method: 'DELETE',
         });
 

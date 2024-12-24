@@ -10,7 +10,7 @@ const StoryList = () => {
   //This allows us to keep track of whether a post is selected for deletion or not.
   const fetchStories = async () => {
     try {
-      const response = await fetch("http://localhost:8080/stories");
+      const response = await fetch("/stories");
       const data = await response.json();
       console.log("logging", data);
 

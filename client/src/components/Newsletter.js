@@ -6,7 +6,7 @@ const NewsletterForm = () =>{
     const EmailSubmit = async (e) =>{
         e.preventDefault()
         console.log('eemailsubmit');
-        const uRL= 'http://localhost:8080/newsletter/signup'
+        const uRL= '/newsletter/signup'
         
 
         try{

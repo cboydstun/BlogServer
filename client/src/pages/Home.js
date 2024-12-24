@@ -27,7 +27,7 @@ const HomePage = () => {
 
   const fetchBlogs = async () => {
     try {
-      const response = await fetch("http://localhost:8080/blog/blogs");
+      const response = await fetch("/blog/blogs");
       if (!response.ok) {
         throw new Error("Failed to fetch blogs");
       }
