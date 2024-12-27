@@ -17,10 +17,7 @@ const EventCreation = () => {
     setSuccess("");
 
     try {
-      const token = document.cookie
-        .split(";")
-        .find((row) => row.startsWith("token="))
-        .split("=")[1];
+      const token = localStorage.getItem("token");
 
       const response = await fetch("/events/create", {
         method: "POST",

@@ -1,9 +1,15 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
-// NavBar component for site navigation
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  // Suppose your token is stored in localStorage under the key 'jwt'
+  const token = localStorage.getItem("token"); 
+  // If you store it in cookies, you might parse it differently here.
+
+  console.log("Token:", token);
+
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -16,9 +22,9 @@ const NavBar = () => {
           <div className="font-serif text-xl text-orange-100 font-bold">
             <h2>Story Sphere</h2>
           </div>
-          
+
           {/* Hamburger button */}
-          <button 
+          <button
             onClick={toggleMenu}
             className="md:hidden text-orange-100 hover:text-orange-200 focus:outline-none"
           >
@@ -40,52 +46,54 @@ const NavBar = () => {
           </button>
 
           {/* Navigation Links */}
-          <div className={`${
-            isOpen ? 'block' : 'hidden'
-          } md:block absolute md:relative top-full left-0 right-0 bg-yellow-950 md:bg-transparent md:top-auto z-50`}>
+          <div
+            className={`${
+              isOpen ? "block" : "hidden"
+            } md:block absolute md:relative top-full left-0 right-0 bg-yellow-950 md:bg-transparent md:top-auto z-50`}
+          >
             <div className="flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-0 p-4 md:p-0">
-              <NavLink 
-                to="/" 
+              <NavLink
+                to="/"
                 className="text-orange-100 hover:text-orange-200 block"
                 onClick={() => setIsOpen(false)}
               >
                 Home
               </NavLink>
-              <NavLink 
-                to="/about" 
+              <NavLink
+                to="/about"
                 className="text-orange-100 hover:text-orange-200 block"
                 onClick={() => setIsOpen(false)}
               >
                 About
               </NavLink>
-              <NavLink 
-                to="/blogPage" 
+              <NavLink
+                to="/blogPage"
                 className="text-orange-100 hover:text-orange-200 block"
                 onClick={() => setIsOpen(false)}
               >
                 Blog
               </NavLink>
-              <NavLink 
-                to="/storypage" 
+              <NavLink
+                to="/storypage"
                 className="text-orange-100 hover:text-orange-200 block"
                 onClick={() => setIsOpen(false)}
               >
                 Story List
               </NavLink>
-              <NavLink 
-                to="/events" 
+              <NavLink
+                to="/events"
                 className="text-orange-100 hover:text-orange-200 block"
                 onClick={() => setIsOpen(false)}
               >
                 Events
               </NavLink>
-              {/* LOGIN NAVLINK BUTTON */}
-              <NavLink 
-                to="/login" 
+              {/* LOGIN or PROFILE NAVLINK BUTTON */}
+              <NavLink
+                to={token ? "/profile" : "/login"}
                 className="text-orange-100 hover:text-orange-200 block"
                 onClick={() => setIsOpen(false)}
               >
-                Login
+                {token ? "Profile" : "Login"}
               </NavLink>
             </div>
           </div>

@@ -23,7 +23,7 @@ const Login = () => {
       console.log("Response Data:", data); // Log the response data
       if (response.ok) {
         console.log(data);
-        document.cookie = `token=${data.token}`;
+        localStorage.setItem("token", data.token);
         alert("Login Successful");
         navigate("/profile")
       } else {

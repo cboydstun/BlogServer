@@ -18,10 +18,7 @@ const StoryCreation = ({setIsVisible}) => {
 
     try {
       console.log("Submitting story:", { title, content, description });
-      const token = document.cookie
-        .split(";")
-        .find((row) => row.startsWith("token="))
-        .split("=")[1];
+      const token = localStorage.getItem("token");
         const response = await fetch("/stories", {
         method: "POST",
         headers: {
