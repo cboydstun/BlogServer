@@ -14,20 +14,20 @@ const AboutPage = () => {
   return (
     <>
       <Helmet>
-        <title>About Mike Ninness - Veteran Writer & Washington Wordsmiths Founder</title>
-        <meta name="description" content="Learn about Mike Ninnes, a retired Air Force veteran, published author, and founder of Washington Wordsmiths. Discover his journey from military service to storytelling." />
-        <meta name="keywords" content="Mike Ninnes biography, Air Force veteran writer, Washington Wordsmiths founder, Maryville University author" />
+        <title>About Mike Ninnesss - Veteran Writer & Washington Wordsmiths Founder</title>
+        <meta name="description" content="Learn about Mike Ninness, a retired Air Force veteran, published author, and founder of Washington Wordsmiths. Discover his journey from military service to storytelling." />
+        <meta name="keywords" content="Mike Ninness biography, Air Force veteran writer, Washington Wordsmiths founder, Maryville University author" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="About Mike Ninnes - Veteran Writer & Washington Wordsmiths Founder" />
-        <meta property="og:description" content="Learn about Mike Ninnes, a retired Air Force veteran, published author, and founder of Washington Wordsmiths. Discover his journey from military service to storytelling." />
+        <meta property="og:title" content="About Mike Ninness - Veteran Writer & Washington Wordsmiths Founder" />
+        <meta property="og:description" content="Learn about Mike Ninness, a retired Air Force veteran, published author, and founder of Washington Wordsmiths. Discover his journey from military service to storytelling." />
         <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About Mike Ninnes - Veteran Writer & Washington Wordsmiths Founder" />
-        <meta name="twitter:description" content="Learn about Mike Ninnes, a retired Air Force veteran, published author, and founder of Washington Wordsmiths. Discover his journey from military service to storytelling." />
+        <meta name="twitter:title" content="About Mike Ninness - Veteran Writer & Washington Wordsmiths Founder" />
+        <meta name="twitter:description" content="Learn about Mike Ninness, a retired Air Force veteran, published author, and founder of Washington Wordsmiths. Discover his journey from military service to storytelling." />
         <meta name="twitter:image" content="%PUBLIC_URL%/og-image.png" />
 
         <link rel="canonical" href="https://yourdomain.com/about" />
@@ -39,7 +39,7 @@ const AboutPage = () => {
             "@type": "AboutPage",
             "mainEntity": {
               "@type": "Person",
-              "name": "Mike Ninnes",
+              "name": "Mike Ninness",
               "description": "Retired Air Force veteran, author, and founder of Washington Wordsmiths",
               "jobTitle": "Author",
               "alumniOf": "Air Force",
@@ -80,7 +80,7 @@ const AboutPage = () => {
           <span className="absolute -left-4 -top-1 text-6xl text-orange-300 opacity-20">
             ❝
           </span>
-          About Mike Ninness
+          About Mike Ninnesss
           <span className="absolute -right-4 -bottom-1 text-6xl text-orange-300 opacity-20">
             ❞
           </span>
@@ -91,7 +91,7 @@ const AboutPage = () => {
             <div className="absolute inset-0 border-4 border-yellow-900 rounded-full transform rotate-6 group-hover:rotate-0 transition-all duration-500"></div>
             <img
               src={clientImage}
-              alt="Mike Ninnes"
+              alt="Mike Ninness"
               className="relative w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full border-4 border-white shadow-lg object-cover transform group-hover:scale-105 transition-all duration-500"
             />
           </div>

@@ -48,19 +48,19 @@ const BlogPage = () => {
         {selectedBlog ? (
           // Dynamic meta tags when a blog is selected
           <>
-            <title>{`${selectedBlog.title} - Mike Ninnes Blog`}</title>
+            <title>{`${selectedBlog.title} - Mike Ninness Blog`}</title>
             <meta name="description" content={selectedBlog.content.slice(0, 155) + '...'} />
-            <meta name="keywords" content={`Mike Ninnes, blog, ${selectedBlog.title}, storytelling, writing`} />
+            <meta name="keywords" content={`Mike Ninness, blog, ${selectedBlog.title}, storytelling, writing`} />
             
             {/* Open Graph / Facebook */}
             <meta property="og:type" content="article" />
-            <meta property="og:title" content={`${selectedBlog.title} - Mike Ninnes Blog`} />
+            <meta property="og:title" content={`${selectedBlog.title} - Mike Ninness Blog`} />
             <meta property="og:description" content={selectedBlog.content.slice(0, 155) + '...'} />
             <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
             
             {/* Twitter */}
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content={`${selectedBlog.title} - Mike Ninnes Blog`} />
+            <meta name="twitter:title" content={`${selectedBlog.title} - Mike Ninness Blog`} />
             <meta name="twitter:description" content={selectedBlog.content.slice(0, 155) + '...'} />
             <meta name="twitter:image" content="%PUBLIC_URL%/og-image.png" />
 
@@ -81,7 +81,7 @@ const BlogPage = () => {
                 "dateModified": selectedBlog.created,
                 "publisher": {
                   "@type": "Organization",
-                  "name": "Mike Ninnes Blog",
+                  "name": "Mike Ninness Blog",
                   "logo": {
                     "@type": "ImageObject",
                     "url": "https://yourdomain.com/og-image.png"
@@ -101,20 +101,20 @@ const BlogPage = () => {
         ) : (
           // Default meta tags for blog listing page
           <>
-            <title>Blog Posts - Mike Ninnes</title>
-            <meta name="description" content="Read the latest blog posts from Mike Ninnes. Stories, thoughts, and insights from a veteran writer and storyteller." />
-            <meta name="keywords" content="Mike Ninnes blog, veteran writer blog, storytelling, Washington Wordsmiths" />
+            <title>Blog Posts - Mike Ninness</title>
+            <meta name="description" content="Read the latest blog posts from Mike Ninness. Stories, thoughts, and insights from a veteran writer and storyteller." />
+            <meta name="keywords" content="Mike Ninness blog, veteran writer blog, storytelling, Washington Wordsmiths" />
             
             {/* Open Graph / Facebook */}
             <meta property="og:type" content="website" />
-            <meta property="og:title" content="Blog Posts - Mike Ninnes" />
-            <meta property="og:description" content="Read the latest blog posts from Mike Ninnes. Stories, thoughts, and insights from a veteran writer and storyteller." />
+            <meta property="og:title" content="Blog Posts - Mike Ninness" />
+            <meta property="og:description" content="Read the latest blog posts from Mike Ninness. Stories, thoughts, and insights from a veteran writer and storyteller." />
             <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
             
             {/* Twitter */}
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content="Blog Posts - Mike Ninnes" />
-            <meta name="twitter:description" content="Read the latest blog posts from Mike Ninnes. Stories, thoughts, and insights from a veteran writer and storyteller." />
+            <meta name="twitter:title" content="Blog Posts - Mike Ninness" />
+            <meta name="twitter:description" content="Read the latest blog posts from Mike Ninness. Stories, thoughts, and insights from a veteran writer and storyteller." />
             <meta name="twitter:image" content="%PUBLIC_URL%/og-image.png" />
 
             <link rel="canonical" href="https://yourdomain.com/blog" />
@@ -124,16 +124,16 @@ const BlogPage = () => {
               {JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "Blog",
-                "name": "Mike Ninnes Blog",
-                "description": "Read the latest blog posts from Mike Ninnes. Stories, thoughts, and insights from a veteran writer and storyteller.",
+                "name": "Mike Ninness Blog",
+                "description": "Read the latest blog posts from Mike Ninness. Stories, thoughts, and insights from a veteran writer and storyteller.",
                 "url": "https://yourdomain.com/blog",
                 "author": {
                   "@type": "Person",
-                  "name": "Mike Ninnes"
+                  "name": "Mike Ninness"
                 },
                 "publisher": {
                   "@type": "Organization",
-                  "name": "Mike Ninnes Blog",
+                  "name": "Mike Ninness Blog",
                   "logo": {
                     "@type": "ImageObject",
                     "url": "https://yourdomain.com/og-image.png"

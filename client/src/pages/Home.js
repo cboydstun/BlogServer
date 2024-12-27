@@ -50,20 +50,20 @@ const HomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Mike Ninness - Author, Storyteller, and Air Force Veteran</title>
-        <meta name="description" content="Explore Mike Ninnes's collection of stories, including 'God, Country, Family'. Discover blog posts from a retired Air Force veteran and accomplished storyteller." />
-        <meta name="keywords" content="Mike Ninnes, author, storyteller, Air Force veteran, God Country Family, short stories, blog" />
+        <title>Mike Ninnesss - Author, Storyteller, and Air Force Veteran</title>
+        <meta name="description" content="Explore Mike Ninness's collection of stories, including 'God, Country, Family'. Discover blog posts from a retired Air Force veteran and accomplished storyteller." />
+        <meta name="keywords" content="Mike Ninness, author, storyteller, Air Force veteran, God Country Family, short stories, blog" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Mike Ninnes - Author, Storyteller, and Air Force Veteran" />
-        <meta property="og:description" content="Explore Mike Ninnes's collection of stories, including 'God, Country, Family'. Discover blog posts from a retired Air Force veteran and accomplished storyteller." />
+        <meta property="og:title" content="Mike Ninness - Author, Storyteller, and Air Force Veteran" />
+        <meta property="og:description" content="Explore Mike Ninness's collection of stories, including 'God, Country, Family'. Discover blog posts from a retired Air Force veteran and accomplished storyteller." />
         <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Mike Ninnes - Author, Storyteller, and Air Force Veteran" />
-        <meta name="twitter:description" content="Explore Mike Ninnes's collection of stories, including 'God, Country, Family'. Discover blog posts from a retired Air Force veteran and accomplished storyteller." />
+        <meta name="twitter:title" content="Mike Ninness - Author, Storyteller, and Air Force Veteran" />
+        <meta name="twitter:description" content="Explore Mike Ninness's collection of stories, including 'God, Country, Family'. Discover blog posts from a retired Air Force veteran and accomplished storyteller." />
         <meta name="twitter:image" content="%PUBLIC_URL%/og-image.png" />
 
         <link rel="canonical" href="https://yourdomain.com" />
@@ -74,11 +74,11 @@ const HomePage = () => {
             "@context": "https://schema.org",
             "@type": "WebSite",
             "url": "https://yourdomain.com",
-            "name": "Mike Ninnes - Author & Storyteller",
-            "description": "Explore Mike Ninnes's collection of stories, including 'God, Country, Family'. Discover blog posts from a retired Air Force veteran and accomplished storyteller.",
+            "name": "Mike Ninness - Author & Storyteller",
+            "description": "Explore Mike Ninness's collection of stories, including 'God, Country, Family'. Discover blog posts from a retired Air Force veteran and accomplished storyteller.",
             "author": {
               "@type": "Person",
-              "name": "Mike Ninnes",
+              "name": "Mike Ninness",
               "description": "Retired Air Force veteran, author, and founder of Washington Wordsmiths",
               "sameAs": [
                 "https://yourdomain.com/about"
@@ -89,7 +89,7 @@ const HomePage = () => {
               "name": "God, Country, Family: Three Short Stories",
               "author": {
                 "@type": "Person",
-                "name": "Mike Ninnes"
+                "name": "Mike Ninness"
               },
               "url": "https://a.co/d/8bZOQID",
               "description": "Three Stories pulling you in with questions of belief, War, Tears and Laughter..."
@@ -143,12 +143,12 @@ const HomePage = () => {
             <div className="absolute inset-0 border-4 border-yellow-900 rounded-full transform rotate-6 group-hover:rotate-0 transition-all duration-500"></div>
             <img
               src={clientImage}
-              alt="Mike Ninnes"
+              alt="Mike Ninness"
               className="relative w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full border-4 border-white shadow-lg object-cover transform group-hover:scale-105 transition-all duration-500"
             />
           </div>
           <h2 className="text-3xl font-serif font-bold mb-4 text-yellow-950">
-            About Mike Ninnes
+            About Mike Ninnesss
           </h2>
           <p className="text-xl font-serif text-yellow-950 mb-6 max-w-2xl text-center leading-relaxed">
             Mike, a retired Air Force vet, storyteller, and writer, has been
