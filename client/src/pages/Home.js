@@ -50,7 +50,7 @@ const HomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Mike Ninnes - Author, Storyteller, and Air Force Veteran</title>
+        <title>Mike Ninness - Author, Storyteller, and Air Force Veteran</title>
         <meta name="description" content="Explore Mike Ninnes's collection of stories, including 'God, Country, Family'. Discover blog posts from a retired Air Force veteran and accomplished storyteller." />
         <meta name="keywords" content="Mike Ninnes, author, storyteller, Air Force veteran, God Country Family, short stories, blog" />
         
@@ -152,7 +152,7 @@ const HomePage = () => {
           </h2>
           <p className="text-xl font-serif text-yellow-950 mb-6 max-w-2xl text-center leading-relaxed">
             Mike, a retired Air Force vet, storyteller, and writer, has been
-            published by Maryville University and founded the Washington
+            published by Maryville University and helped found the Washington
             Wordsmiths. Discover his journey—click to learn more!
           </p>
           <Link
