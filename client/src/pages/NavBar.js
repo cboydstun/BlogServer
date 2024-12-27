@@ -79,6 +79,14 @@ const NavBar = () => {
               >
                 Events
               </NavLink>
+              {/* LOGIN NAVLINK BUTTON */}
+              <NavLink 
+                to="/login" 
+                className="text-orange-100 hover:text-orange-200 block"
+                onClick={() => setIsOpen(false)}
+              >
+                Login
+              </NavLink>
             </div>
           </div>
         </div>
