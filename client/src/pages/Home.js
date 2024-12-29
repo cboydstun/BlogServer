@@ -213,10 +213,10 @@ const HomePage = () => {
       </section>
 
       {/* Newsletter Section */}
-      <section className={`${sectionClasses} bg-white/95 flex justify-center`}>
+      {/* <section className={`${sectionClasses} bg-white/95 flex justify-center`}>
         <div className={gradientBorderClasses}></div>
         <NewsletterForm />
-      </section>
+      </section> */}
     </div>
     </>
   );

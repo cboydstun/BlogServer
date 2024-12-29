@@ -47,11 +47,11 @@ const Footer = () => {
             <h4 className="text-xl font-serif font-bold mb-4 text-orange-300">Follow Us</h4>
             <ul className="space-y-2">
               <li>
-                <a href="https://facebook.com/mikeNinness" className="hover:text-orange-300 transition-colors">
+                <a href="https://www.facebook.com/groups/1860316970718578" className="hover:text-orange-300 transition-colors">
                   Facebook
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="https://twitter.com/mikeNinness" className="hover:text-orange-300 transition-colors">
                   Twitter
                 </a>
@@ -60,7 +60,7 @@ const Footer = () => {
                 <a href="https://instagram.com/mikeNinness" className="hover:text-orange-300 transition-colors">
                   Instagram
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
