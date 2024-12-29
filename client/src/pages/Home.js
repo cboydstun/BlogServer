@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet-async';
 import clientImage from "../assets/MikeN.png";
-import NewsletterForm from "../components/Newsletter";
+// import NewsletterForm from "../components/Newsletter";
 import "../pages/Home";
 
 // Reusable style classes

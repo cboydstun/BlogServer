@@ -14,6 +14,7 @@ import Profile from "./pages/Profile";
 import StoryPage from "./pages/storypage.js";
 import EventsPage from "./pages/Events.js";
 import AdminReviewComment from './pages/AdminReviewComment';
+import PrivacyPolicy from "./pages/PrivacyPolicy.js";
 
 // Components
 import Login from "./components/Login";
@@ -31,6 +32,7 @@ const router = createBrowserRouter(
       <Route path="blogPage" element={<BlogPage />} />
       <Route path="events" element={<EventsPage />} />
       <Route path="storyPage" element={<StoryPage />} />
+      <Route path="privacy" element={<PrivacyPolicy />} />
 
       {/* Protected Routes */}
       <Route path="profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
