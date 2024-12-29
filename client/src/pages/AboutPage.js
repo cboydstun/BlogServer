@@ -14,7 +14,7 @@ const AboutPage = () => {
   return (
     <>
       <Helmet>
-        <title>About Mike Ninnesss - Veteran Writer & Washington Wordsmiths Founder</title>
+        <title>About Mike Ninness - Veteran Writer & Washington Wordsmiths Founder</title>
         <meta name="description" content="Learn about Mike Ninness, a retired Air Force veteran, published author, and founder of Washington Wordsmiths. Discover his journey from military service to storytelling." />
         <meta name="keywords" content="Mike Ninness biography, Air Force veteran writer, Washington Wordsmiths founder, Maryville University author" />
         
@@ -80,7 +80,7 @@ const AboutPage = () => {
           <span className="absolute -left-4 -top-1 text-6xl text-orange-300 opacity-20">
             ❝
           </span>
-          About Mike Ninnesss
+          About Mike Ninness
           <span className="absolute -right-4 -bottom-1 text-6xl text-orange-300 opacity-20">
             ❞
           </span>

@@ -50,7 +50,7 @@ const HomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Mike Ninnesss - Author, Storyteller, and Air Force Veteran</title>
+        <title>Mike Ninness - Author, Storyteller, and Air Force Veteran</title>
         <meta name="description" content="Explore Mike Ninness's collection of stories, including 'God, Country, Family'. Discover blog posts from a retired Air Force veteran and accomplished storyteller." />
         <meta name="keywords" content="Mike Ninness, author, storyteller, Air Force veteran, God Country Family, short stories, blog" />
         
@@ -148,7 +148,7 @@ const HomePage = () => {
             />
           </div>
           <h2 className="text-3xl font-serif font-bold mb-4 text-yellow-950">
-            About Mike Ninnesss
+            About Mike Ninness
           </h2>
           <p className="text-xl font-serif text-yellow-950 mb-6 max-w-2xl text-center leading-relaxed">
             Mike, a retired Air Force vet, storyteller, and writer, has been
