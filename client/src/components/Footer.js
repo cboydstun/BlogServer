@@ -11,10 +11,7 @@ const Footer = () => {
             <h4 className="text-xl font-serif font-bold mb-4 text-orange-300">Contact Us</h4>
             <ul className="space-y-2">
               <li className="hover:text-orange-300 transition-colors">
-                <a href="mailto:contact@mikeNinness.com">contact@mikeNinness.com</a>
-              </li>
-              <li className="hover:text-orange-300 transition-colors">
-                <a href="tel:+1234567890">(123) 456-7890</a>
+                <a href="mailto:starfrogs@yahoo.com">starfrogs@yahoo.com</a>
               </li>
               <li>Washington, USA</li>
             </ul>
@@ -29,7 +26,7 @@ const Footer = () => {
                   Privacy Policy
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/terms" className="hover:text-orange-300 transition-colors">
                   Terms of Service
                 </Link>
@@ -38,7 +35,7 @@ const Footer = () => {
                 <Link to="/cookies" className="hover:text-orange-300 transition-colors">
                   Cookie Policy
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
